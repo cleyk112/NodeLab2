@@ -1,6 +1,6 @@
 import http from "http";
 import { URL } from "url";
-import { handleRequest } from "../../router.js";
+import { handleRequest } from "./router.js";
 
 const server = http.createServer((req, res) => {
   const parsedUrl = new URL(req.url, `http://${req.headers.host}`);
